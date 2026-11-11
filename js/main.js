@@ -97,6 +97,45 @@
   backdrop.addEventListener('click', closeSheet);
   sheetBody.addEventListener('click', function (e) { if (e.target.closest('a')) closeSheet(); });
 
+  /* ---------- What we do (tabs) ---------- */
+  (function () {
+    var data = window.GWADAR_SERVICES || [];
+    var list = document.getElementById('whatList');
+    if (!list || !data.length) return;
+    var card = document.getElementById('whatCard'), media = document.getElementById('whatMedia');
+    var chips = document.getElementById('whatChips'), title = document.getElementById('whatTitle');
+    var desc = document.getElementById('whatDesc'), link = document.getElementById('whatLink');
+    function e(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+    list.innerHTML = data.map(function (d, i) {
+      return '<button type="button" class="what-tab" role="tab" id="wtab' + i + '" data-i="' + i + '" aria-selected="false" tabindex="-1" aria-controls="whatCard">' +
+        '<strong>' + e(d.title) + '</strong><svg class="ico"><use href="#i-arrow-right"/></svg><span>' + e(d.short) + '</span></button>';
+    }).join('');
+    var tabs = list.querySelectorAll('.what-tab');
+    function select(i, focus) {
+      var d = data[i];
+      tabs.forEach(function (t, k) { t.setAttribute('aria-selected', String(k === i)); t.tabIndex = k === i ? 0 : -1; });
+      media.style.backgroundImage = d.image ? "url('" + d.image + "')" : d.bg;
+      media.innerHTML = d.image ? '' : '<span class="m-mark">' + e(d.title) + '</span>';
+      chips.innerHTML = d.chips.map(function (c) { return '<li>' + e(c) + '</li>'; }).join('');
+      title.textContent = d.title; desc.textContent = d.desc;
+      link.href = d.link; link.firstChild.nodeValue = 'Explore ' + d.title + ' ';
+      card.setAttribute('aria-labelledby', 'wtab' + i);
+      card.classList.remove('swap'); void card.offsetWidth; card.classList.add('swap');
+      if (focus) tabs[i].focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('mouseenter', function () { if (!mq.matches) select(i); });
+      t.addEventListener('keydown', function (ev) {
+        var n = null;
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') n = (i + 1) % data.length;
+        if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') n = (i - 1 + data.length) % data.length;
+        if (n !== null) { ev.preventDefault(); select(n, true); }
+      });
+    });
+    select(0);
+  })();
+
   /* ---------- Client carousel (auto-scrolling marquee) ---------- */
   var track = document.getElementById('carouselTrack');
   var viewport = document.getElementById('carouselViewport');
