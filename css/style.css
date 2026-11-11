@@ -258,6 +258,21 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .step p{margin:0;font-size:15px;line-height:1.65;color:#5d6078}
 
 /* =========================================================
+   FINAL CTA (dark purple)
+   ========================================================= */
+.cta{position:relative;z-index:4;overflow:hidden;text-align:center;color:#fff;margin-top:-44px;border-radius:44px 44px 0 0;padding:120px 0 140px;background:linear-gradient(180deg,#0f0f12 0%,#1c0a3d 38%,#3d0c85 75%,#4f0a94 100%)}
+.cta-x{position:absolute;right:0;bottom:0;width:340px;height:300px;opacity:.5;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45'%3E%3Cpath d='M18 18l5 5M23 18l-5 5' stroke='%23c9a8ff' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(to left,#000,transparent);mask-image:linear-gradient(to left,#000,transparent)}
+.cta-inner{position:relative;max-width:920px}
+.cta h2{font-family:var(--font-head);font-weight:700;font-size:clamp(2.6rem,7.5vw,6.4rem);line-height:1;letter-spacing:-2px;text-transform:uppercase}
+.cta h2 em{display:inline-block;padding-right:.08em;font-style:italic;background:linear-gradient(90deg,#8a24ff 10%,#e2d2fa 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta p{max-width:690px;margin:34px auto 38px;font-size:18px;line-height:1.7;color:#ddd3f2}
+.btn-purple{background:#7a12ff;color:#fff;gap:10px;border-radius:999px;font-weight:700}
+.btn-purple .ico{width:16px;height:16px;stroke-width:2.4}
+.btn-purple:hover{box-shadow:0 10px 30px rgba(122,18,255,.5)}
+
+/* =========================================================
    MOBILE BOTTOM BAR + SHEET (hidden on desktop)
    ========================================================= */
 .bottom-bar,.sheet,.sheet-backdrop{display:none}
@@ -311,6 +326,12 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .step-no,.step h3,.step p{grid-column:2}
   .step h3{margin:2px 0 6px}
   .is-last{padding-bottom:0}
+
+  .cta{padding:80px 0 96px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .cta h2{letter-spacing:-1px}
+  .cta p{font-size:16px;margin:24px auto 30px}
+  .cta .btn-lg{padding:0 26px}
+  .cta-x{width:200px;height:200px}
 
   /* sticky bottom bar */
   .bottom-bar{
