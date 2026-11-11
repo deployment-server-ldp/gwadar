@@ -11,7 +11,7 @@
      bg     : fallback CSS background if no image
    ========================================================= */
 window.GWADAR_CLIENTS = [
-  { name: "Client One",   stat: "+100%", label: "Website Engagement",        image: "", logo: "", bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
+  { name: "Bio-X Weight Loss Center", stat: "+471%", label: "Increase in Organic Leads", image: "assets/clients/bio-x-weight-loss.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
   { name: "Junk Patrol", stat: "+179%", label: "Organic Traffic Value", image: "assets/clients/junk-patrol.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8b5cf6,#1a0f4d)" },
   { name: "Victor Super Premium Pet Food", stat: "134%",  label: "Increase in engagement rate", image: "assets/clients/victor.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#5a1d00)" },
   { name: "Joaquin Painting", stat: "290%",  label: "Increase in conversions", image: "assets/clients/joaquin-painting.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#16c04b,#06351a)" },
