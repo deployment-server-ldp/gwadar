@@ -16,5 +16,5 @@ window.GWADAR_CLIENTS = [
   { name: "Victor Super Premium Pet Food", stat: "134%",  label: "Increase in engagement rate", image: "assets/clients/victor.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#5a1d00)" },
   { name: "Client Four",  stat: "260%",  label: "Increase in conversions",   image: "", logo: "", bg: "linear-gradient(160deg,#16c04b,#06351a)" },
   { name: "Client Five",  stat: "42%",   label: "Increase in organic website traffic", image: "", logo: "", bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
-  { name: "Client Six",   stat: "3.2x",  label: "Return on ad spend",        image: "", logo: "", bg: "linear-gradient(160deg,#e0457b,#3d0a24)" }
+  { name: "Sharkey's Cuts for Kids", stat: "4.8x",  label: "Return on ad spend", image: "assets/clients/sharkeys-cuts-for-kids.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#e0457b,#3d0a24)" }
 ];
