@@ -190,7 +190,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    WHAT WE DO (light section)
    ========================================================= */
-.what{position:relative;z-index:1;background:#fff;color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:90px 0 110px}
+.what{position:relative;z-index:1;background:#fff;color:var(--ink);padding:90px 0 110px}
 .what-head{text-align:center;max-width:860px;margin:0 auto 56px}
 .what h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:600;letter-spacing:-1.2px;line-height:1.1;margin:22px 0 18px}
 .what h2 .accent{color:var(--purple)}
@@ -225,7 +225,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    PERFORMANCE GUARANTEE (dark)
    ========================================================= */
-.guarantee{position:relative;z-index:2;overflow:hidden;background:var(--navy-3);border-radius:44px 44px 0 0;margin-top:-44px;padding:110px 0 100px}
+.guarantee{position:relative;z-index:2;overflow:hidden;background:var(--navy-3);padding:110px 0 100px}
 .g-glow{position:absolute;top:-30%;right:-10%;width:60vw;height:60vw;max-width:900px;max-height:900px;background:radial-gradient(circle,rgba(27,143,217,.32),transparent 65%);pointer-events:none}
 .g-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
 .guarantee h2{font-size:clamp(2.2rem,4.6vw,4rem);line-height:1.1;font-weight:500;letter-spacing:-1.2px;margin-bottom:38px}
@@ -242,7 +242,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    HOW WE WORK (light)
    ========================================================= */
-.how{position:relative;z-index:3;background:var(--soft);color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:100px 0 110px}
+.how{position:relative;z-index:3;background:var(--soft);color:var(--ink);padding:100px 0 110px}
 .how h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:600;letter-spacing:-1.6px;line-height:1.1;margin:18px 0 18px}
 .how-lead{margin:0;max-width:600px;font-size:18px;line-height:1.65;color:#55586f}
 .steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0 28px;margin-top:64px}
@@ -259,7 +259,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    INDUSTRIES (light)
    ========================================================= */
-.inds{position:relative;z-index:4;overflow:hidden;background:#fff;color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:90px 0 110px}
+.inds{position:relative;z-index:4;overflow:hidden;background:#fff;color:var(--ink);padding:90px 0 110px}
 .inds-lines{position:absolute;top:30px;right:-30px;width:420px;height:420px;color:#9aa0b8;opacity:.45;pointer-events:none}
 .inds-head{position:relative;text-align:center;max-width:900px;margin:0 auto 56px}
 .inds h2{font-size:clamp(2rem,4.6vw,3.4rem);font-weight:600;letter-spacing:-1px;line-height:1.15;margin:22px 0 18px}
@@ -276,7 +276,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    OUR TEAM (light)
    ========================================================= */
-.team{position:relative;z-index:5;background:var(--soft);color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:90px 0 110px}
+.team{position:relative;z-index:5;background:var(--soft);color:var(--ink);padding:90px 0 110px}
 .team-head{text-align:center;max-width:820px;margin:0 auto 70px}
 .team-title{position:relative;display:block;width:fit-content;margin:14px auto 26px;padding-bottom:26px;font-size:clamp(2rem,5vw,3.8rem);font-weight:600;letter-spacing:-1.2px;line-height:1.1}
 .brush{position:absolute;left:0;bottom:0;width:100%;height:24px;overflow:visible}
@@ -296,7 +296,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    TECHNOLOGY PARTNERS (light)
    ========================================================= */
-.partners{position:relative;z-index:6;background:#fff;color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:90px 0 110px;overflow:hidden}
+.partners{position:relative;z-index:6;background:#fff;color:var(--ink);padding:90px 0 110px;overflow:hidden}
 .partners-title{text-align:center;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:600;letter-spacing:-1px;line-height:1.15}
 .partners-title span{position:relative;z-index:1}
 .partners-title{position:relative;display:block;width:fit-content;margin-inline:auto;padding-bottom:30px}
@@ -316,7 +316,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    FINAL CTA (dark purple)
    ========================================================= */
-.cta{position:relative;z-index:7;overflow:hidden;text-align:center;color:#fff;margin-top:-44px;border-radius:44px 44px 0 0;padding:120px 0 140px;background:radial-gradient(ellipse at 50% 0%,rgba(27,143,217,.35),transparent 65%),var(--navy-3)}
+.cta{position:relative;z-index:7;overflow:hidden;text-align:center;color:#fff;padding:120px 0 140px;background:radial-gradient(ellipse at 50% 0%,rgba(27,143,217,.35),transparent 65%),var(--navy-3)}
 .cta-x{position:absolute;right:0;bottom:0;width:340px;height:300px;opacity:.5;pointer-events:none;
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45'%3E%3Cpath d='M18 18l5 5M23 18l-5 5' stroke='%237fd8f0' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E");
   -webkit-mask-image:linear-gradient(to left,#000,transparent);mask-image:linear-gradient(to left,#000,transparent)}
@@ -329,7 +329,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
    CONTACT / GET STARTED (dark)
    ========================================================= */
 :root{--grad:linear-gradient(90deg,#2de1d6,#1b8fd9)}
-.contact{position:relative;z-index:8;background:var(--navy);color:#fff;border-radius:44px 44px 0 0;margin-top:-44px;padding-bottom:110px;scroll-margin-top:0}
+.contact{position:relative;z-index:8;background:var(--navy);color:#fff;padding-bottom:110px;scroll-margin-top:0}
 .contact-stats{border-bottom:1px solid rgba(255,255,255,.08)}
 .stats-row{display:flex;align-items:center;justify-content:center;gap:56px;padding-block:30px;flex-wrap:wrap}
 .stats-row p{margin:0;font-size:17px;color:#b4b6c8}
@@ -375,7 +375,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    FAQ (light)
    ========================================================= */
-.faq{position:relative;z-index:9;background:var(--soft);color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:100px 0 110px}
+.faq{position:relative;z-index:9;background:var(--soft);color:var(--ink);padding:100px 0 110px}
 .faq-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start;max-width:1100px}
 .faq h2{font-size:clamp(2.2rem,4.4vw,3.6rem);font-weight:500;letter-spacing:-1.2px;line-height:1.12;position:sticky;top:110px}
 .faq-list{border-top:1px solid #dcdde4}
@@ -393,7 +393,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 /* =========================================================
    FOOTER (light)
    ========================================================= */
-.site-footer{position:relative;z-index:10;background:#fff;color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:70px 0 40px}
+.site-footer{position:relative;z-index:10;background:#fff;color:var(--ink);padding:70px 0 40px}
 .brand-dark{color:var(--navy)}
 .brand-dark .brand-text b{color:var(--blue)}
 .f-top{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;margin:44px 0 64px}
@@ -458,7 +458,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .c-card{width:236px;height:360px;border-radius:24px}
   .c-stat{font-size:28px}
 
-  .what{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .what{padding:64px 0 72px}
   .what-head{margin-bottom:34px}
   .what-panel{grid-template-columns:1fr;padding:14px;gap:14px;border-radius:28px}
   .what-list{flex-direction:row;overflow-x:auto;scroll-snap-type:x proximity;gap:8px;padding:2px 2px 6px;scrollbar-width:none;margin-inline:-2px}
@@ -473,12 +473,12 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .what-chips li{font-size:13px;padding:7px 14px 7px 12px}
   .what-media .m-mark{left:20px;bottom:16px}
 
-  .guarantee{padding:72px 0 64px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .guarantee{padding:72px 0 64px}
   .g-grid{grid-template-columns:1fr;gap:36px}
   .guarantee h2{margin-bottom:28px}
   .g-left .btn-lg{width:100%}
 
-  .how{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .how{padding:64px 0 72px}
   .how-lead{font-size:16px}
   .steps{grid-template-columns:1fr;gap:0;margin-top:40px}
   .step{position:relative;display:grid;grid-template-columns:56px 1fr;column-gap:18px;padding-bottom:30px}
@@ -489,25 +489,25 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .step h3{margin:2px 0 6px}
   .is-last{padding-bottom:0}
 
-  .inds{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .inds{padding:64px 0 72px}
   .inds-head{margin-bottom:34px}
   .inds-head p{font-size:15px}
   .inds-lines{width:260px;height:260px;right:-60px}
   .inds-grid{grid-template-columns:1fr 1fr;gap:12px}
   .i-card{border-radius:18px}
   .i-title{top:14px;left:14px;right:12px;font-size:15px}
-  .team{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .team{padding:64px 0 72px}
   .team-head{margin-bottom:44px}
   .team-head p{font-size:15px}
   .team-grid{grid-template-columns:1fr 1fr;gap:36px 16px}
   .t-card h3{font-size:16px}
   .t-card p{font-size:13.5px}
-  .partners{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .partners{padding:64px 0 72px}
   .partners-title{padding-bottom:22px}
   .p-tile{width:170px;height:150px;border-radius:16px}
   .p-name{font-size:20px}
   .p-set{gap:14px;padding-right:14px}
-  .contact{padding-bottom:64px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .contact{padding-bottom:64px}
   .stats-row{gap:10px 26px;padding-block:22px;justify-content:flex-start}
   .stats-row p{font-size:14px}.stats-row b{font-size:20px}
   .stats-row .btn-cta{width:100%;margin-top:6px}
@@ -522,7 +522,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .field input,.field textarea,.field select{font-size:16px}
   .phone-row{gap:10px}.field select{max-width:150px}
   .btn-block{height:54px;font-size:16px;margin-top:30px!important}
-  .site-footer{padding:48px 0 28px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .site-footer{padding:48px 0 28px}
   .f-top{flex-direction:column;margin:30px 0 40px;gap:22px}
   .f-top h2{letter-spacing:-1px}
   .btn-pill-lg{height:50px;font-size:16px;margin-top:0}
@@ -531,12 +531,12 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .f-col a{font-size:15px}
   .f-contact{grid-template-columns:1fr;gap:22px;margin-top:44px}
   .f-bottom{flex-direction:column;gap:10px}
-  .faq{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .faq{padding:64px 0 72px}
   .faq-grid{grid-template-columns:1fr;gap:30px}
   .faq-title{position:static}
   .faq-q{font-size:16px;padding:20px 2px}
   .faq-a p{padding-right:8px;font-size:15px}
-  .cta{padding:80px 0 96px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .cta{padding:80px 0 96px}
   .cta h2{letter-spacing:-1px}
   .cta p{font-size:16px;margin:24px auto 30px}
   .cta .btn-lg{padding:0 26px}
