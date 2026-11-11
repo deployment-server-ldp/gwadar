@@ -95,7 +95,7 @@
 
     <div class="header-actions">
       <a href="tel:+920000000000" class="icon-btn" aria-label="Call us"><svg class="ico"><use href="#i-phone"/></svg></a>
-      <a href="contact.html" class="btn btn-orange">Get Started</a>
+      <a href="#contact" class="btn btn-orange">Get Started</a>
     </div>
 
     <!-- ============ MEGA PANELS (desktop; cloned into bottom-sheet on mobile) ============ -->
@@ -346,7 +346,7 @@
       <div class="g-left">
         <span class="g-eyebrow">Our performance guarantee</span>
         <h2>We guarantee to beat your results by <span class="c-blue">40%</span> or we work <span class="c-orange2">for free.</span></h2>
-        <a href="contact.html" class="btn btn-orange btn-lg">Get a Free Quote</a>
+        <a href="#contact" class="btn btn-orange btn-lg">Get a Free Quote</a>
       </div>
       <div class="g-right">
         <p>This is for businesses already running profitable Google or Facebook ads. We'll design a new funnel, write ads, and optimise performance until we <strong>beat your existing conversion rate, CPL or ROAS by 40%</strong> within 90 days, or we work for free until we do.</p>
@@ -451,7 +451,81 @@
     <div class="container cta-inner">
       <h2>Let's grow big,<br><em>guaranteed.</em></h2>
       <p>Are you ready to grow? In just 30 minutes, our experienced team of digital marketing experts in Gwadar will map out a growth plan: your brand's proven, guaranteed sales forecast. It's the proof in the pudding.</p>
-      <a href="contact.html" class="btn btn-purple btn-lg">Get your growth plan <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+      <a href="#contact" class="btn btn-purple btn-lg">Get your growth plan <svg class="ico"><use href="#i-arrow-up-right"/></svg></a>
+    </div>
+  </section>
+
+  <!-- CONTACT / GET STARTED -->
+  <section class="contact" id="contact">
+    <div class="contact-stats">
+      <div class="container stats-row">
+        <p><b>30 min</b> free strategy call</p>
+        <p><b>90 days</b> performance guarantee</p>
+        <p><b>Gwadar</b> based team</p>
+        <a href="#contact-form" class="btn btn-grad">Book a strategy call <svg class="ico"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Get Started<br><span class="grad-text">With Us</span></h2>
+        <p class="lead">Book a discovery call to get a look at:</p>
+        <ul class="c-points">
+          <li><svg class="ico"><use href="#i-check"/></svg>How we plan and run your digital marketing</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>The package that best fits your goals and budget</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Pricing, onboarding, and anything else</li>
+        </ul>
+        <div class="tools-card">
+          <span class="tools-label">Tools we work with</span>
+          <div class="tools-grid">
+            <span>HubSpot</span><span>Salesforce</span><span>Zoho</span>
+            <span>Google Ads</span><span>Meta Ads</span><span>WordPress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Book a call with us</h3>
+        <!-- Set data-endpoint to a form service URL (e.g. Formspree) to receive submissions.
+             Until then the form falls back to opening an email to data-mailto. -->
+        <form id="contactForm" novalidate data-endpoint="" data-mailto="hello@gwadar.digital">
+          <div class="field">
+            <label for="cf-first">First name <i>*</i></label>
+            <input id="cf-first" name="first_name" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="cf-last">Last name <i>*</i></label>
+            <input id="cf-last" name="last_name" type="text" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email <i>*</i></label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field field-phone">
+            <label for="cf-phone">Phone number <small>(optional)</small></label>
+            <div class="phone-row">
+              <select name="country" aria-label="Country code">
+                <option value="+92" selected>Pakistan (+92)</option>
+                <option value="+971">UAE (+971)</option>
+                <option value="+966">Saudi Arabia (+966)</option>
+                <option value="+968">Oman (+968)</option>
+                <option value="+974">Qatar (+974)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+1">United States (+1)</option>
+              </select>
+              <input id="cf-phone" name="phone" type="tel" placeholder="300 1234567" autocomplete="tel-national" inputmode="tel">
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-msg">Message <small>(optional)</small></label>
+            <textarea id="cf-msg" name="message" rows="3"></textarea>
+          </div>
+          <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn-grad btn-block">Book a strategy call</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="fine">By clicking Book a strategy call, you agree to be contacted by Gwadar Digital Agency in accordance with our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
     </div>
   </section>
 

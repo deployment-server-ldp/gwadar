@@ -136,6 +136,39 @@
     select(0);
   })();
 
+  /* ---------- Contact form ---------- */
+  (function () {
+    var form = document.getElementById('contactForm');
+    if (!form) return;
+    var status = document.getElementById('formStatus');
+    function setStatus(msg, err) { status.textContent = msg; status.classList.toggle('err', !!err); }
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var ok = true;
+      form.querySelectorAll('[required]').forEach(function (inp) {
+        var valid = inp.value.trim() !== '' && (inp.type !== 'email' || /^\S+@\S+\.\S+$/.test(inp.value.trim()));
+        inp.closest('.field').classList.toggle('invalid', !valid);
+        if (!valid) ok = false;
+      });
+      if (!ok) { setStatus('Please fill in the highlighted fields.', true); return; }
+      if (form.elements.website.value) return; // honeypot
+      var d = {};
+      new FormData(form).forEach(function (v, k) { d[k] = v; });
+      var endpoint = form.dataset.endpoint;
+      if (endpoint) {
+        setStatus('Sending...');
+        fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(d) })
+          .then(function (r) { if (!r.ok) throw new Error(); form.reset(); setStatus('Thanks! We will contact you shortly.'); })
+          .catch(function () { setStatus('Something went wrong. Please try again or call us.', true); });
+      } else {
+        var body = 'Name: ' + d.first_name + ' ' + d.last_name + '\nEmail: ' + d.email + '\nPhone: ' + (d.phone ? d.country + ' ' + d.phone : '-') + '\n\n' + (d.message || '');
+        window.location.href = 'mailto:' + form.dataset.mailto + '?subject=' + encodeURIComponent('Strategy call request') + '&body=' + encodeURIComponent(body);
+        setStatus('Opening your email app to send the request...');
+      }
+    });
+    form.addEventListener('input', function (e) { var f = e.target.closest('.field'); if (f) f.classList.remove('invalid'); });
+  })();
+
   /* ---------- Industries grid ---------- */
   (function () {
     var data = window.GWADAR_INDUSTRIES || [], grid = document.getElementById('indsGrid');
