@@ -18,5 +18,6 @@ window.GWADAR_CLIENTS = [
   { name: "Tyris Tile and Renovations", stat: "172%",  label: "Increase in organic website traffic", image: "assets/clients/tyris-tile-renovations.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
   { name: "Sharkey's Cuts for Kids", stat: "4.8x",  label: "Return on ad spend", image: "assets/clients/sharkeys-cuts-for-kids.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#e0457b,#3d0a24)" },
   { name: "Bali Family Dental Care", stat: "+811%", label: "Social Media Growth", image: "assets/clients/bali-family-dental-care.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
-  { name: "Aruni Restoran & Bar", stat: "5.11x", label: "ROAS on Meta Ads", image: "assets/clients/aruni-restoran-bar.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8a4b2a,#2a1408)" }
+  { name: "Aruni Restoran & Bar", stat: "5.11x", label: "ROAS on Meta Ads", image: "assets/clients/aruni-restoran-bar.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8a4b2a,#2a1408)" },
+  { name: "Rüyam Gemüse Kebab", stat: "+178%", label: "Conversions YOY", image: "assets/clients/ruyam-gemuse-kebab.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#3a1a00)" }
 ];
