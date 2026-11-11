@@ -136,6 +136,17 @@
     select(0);
   })();
 
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-q').forEach(function (b) {
+        b.setAttribute('aria-expanded', 'false'); b.closest('.faq-item').classList.remove('open');
+      });
+      if (!open) { btn.setAttribute('aria-expanded', 'true'); btn.closest('.faq-item').classList.add('open'); }
+    });
+  });
+
   /* ---------- Contact form ---------- */
   (function () {
     var form = document.getElementById('contactForm');
