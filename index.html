@@ -55,6 +55,8 @@
     <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3 3 0 0 0-5 1.5c0 3 5 1.5 5 4.5a3 3 0 0 1-5 1.5M12 6.5v1.5M12 16v1.5"/></symbol>
     <symbol id="i-dining" viewBox="0 0 24 24"><path d="M3 15a9 9 0 0 1 18 0zM2 18h20M12 6V4"/></symbol>
     <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4 2 7s1 6 2.5 6S10 17 12 17s1.5 4 3 4 2-3 2.5-6 2-4 2-7C19.5 5 18 3 16 3c-2 0-2.5 1-4 1S9 3 7 3z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM9 12h7M9 16h7M9 8h3"/></symbol>
     <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .7a4 4 0 0 1-2-2l.7-1-1-2z"/></symbol>
   </defs>
 </svg>
@@ -78,7 +80,7 @@
         <li><button class="nav-btn" type="button" data-panel="industries" aria-expanded="false" aria-controls="panel-industries">Industries</button></li>
         <li><a class="nav-btn" href="revenue.html">Revenue</a></li>
         <li><a class="nav-btn" href="insights.html">Insights</a></li>
-        <li><a class="nav-btn" href="about.html">About</a></li>
+        <li><button class="nav-btn" type="button" data-panel="about" aria-expanded="false" aria-controls="panel-about">About</button></li>
       </ul>
     </nav>
 
@@ -223,6 +225,28 @@
         </div>
       </div>
 
+      <!-- ABOUT -->
+      <div class="panel panel-about" id="panel-about" data-title="About Us" hidden>
+        <div class="split split-about">
+          <div class="split-left">
+            <h3>About Us</h3>
+            <ul class="menu-list">
+              <li><a href="about.html"><svg class="ico"><use href="#i-info"/></svg>About Gwadar Digital</a></li>
+              <li><a href="our-team.html"><svg class="ico"><use href="#i-users"/></svg>Our Team</a></li>
+              <li><a href="insights.html"><svg class="ico"><use href="#i-doc"/></svg>Insights</a></li>
+              <li><a href="careers.html"><svg class="ico"><use href="#i-briefcase"/></svg>Careers</a></li>
+            </ul>
+          </div>
+          <div class="split-right">
+            <a class="team-card" href="our-team.html">
+              <strong>Our Team</strong>
+              <p>Specialists who treat your budget like their own: curious, direct, and hard to please until the numbers move.</p>
+              <span class="pill">Get to know them</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </header>
@@ -243,7 +267,9 @@
   <ul class="menu-list more-list">
     <li><a href="revenue.html"><svg class="ico c-teal"><use href="#i-chart"/></svg>Revenue</a></li>
     <li><a href="insights.html"><svg class="ico c-purple"><use href="#i-search"/></svg>Insights</a></li>
-    <li><a href="about.html"><svg class="ico c-orange"><use href="#i-users"/></svg>About</a></li>
+    <li><a href="about.html"><svg class="ico c-orange"><use href="#i-info"/></svg>About Gwadar Digital</a></li>
+    <li><a href="our-team.html"><svg class="ico c-orange"><use href="#i-users"/></svg>Our Team</a></li>
+    <li><a href="careers.html"><svg class="ico c-orange"><use href="#i-briefcase"/></svg>Careers</a></li>
     <li><a href="contact.html"><svg class="ico c-green"><use href="#i-mail"/></svg>Contact</a></li>
     <li><a href="tel:+920000000000"><svg class="ico c-orange"><use href="#i-phone"/></svg>Call Us</a></li>
     <li><a href="https://wa.me/920000000000"><svg class="ico c-green"><use href="#i-whatsapp"/></svg>WhatsApp</a></li>

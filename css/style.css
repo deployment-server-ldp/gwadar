@@ -141,6 +141,16 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .bars b:nth-child(3){height:80%;background:#7b4fe0}
 .bars b:nth-child(4){height:100%;background:var(--orange)}
 
+/* About */
+.split-about{grid-template-columns:450px 1fr}
+.split-about .split-right{display:flex;padding:36px 36px}
+.team-card{position:relative;flex:1;min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:16px;padding:38px 40px;color:#fff;border-radius:28px 28px 170px 28px;overflow:hidden;isolation:isolate;
+  background:linear-gradient(90deg,rgba(7,10,46,.55),rgba(7,10,46,.2)),linear-gradient(135deg,#1b8fd9,#0b1654);transition:transform .2s}
+.team-card:hover{transform:translateY(-3px)}
+.team-card strong{font-family:var(--font-head);font-size:42px;font-weight:500;line-height:1.1}
+.team-card p{margin:0;max-width:440px;font-size:18px;line-height:1.5}
+.team-card .pill{align-self:flex-start}
+
 /* =========================================================
    HERO
    ========================================================= */
@@ -251,6 +261,10 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .sheet .promo strong{font-size:21px}
   .sheet .pill{font-size:14px;padding:9px 18px}
   .sheet .more-list a{font-size:17px}
+  .sheet .split-about .split-right{padding:14px 0 0}
+  .sheet .team-card{min-height:230px;padding:24px;border-radius:22px 22px 90px 22px}
+  .sheet .team-card strong{font-size:28px}
+  .sheet .team-card p{font-size:15px}
 }
 
 @media (max-width:420px){
