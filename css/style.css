@@ -221,6 +221,24 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 @keyframes whatIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 /* =========================================================
+   PERFORMANCE GUARANTEE (dark)
+   ========================================================= */
+.guarantee{position:relative;z-index:2;overflow:hidden;background:#111846;border-radius:44px 44px 0 0;margin-top:-44px;padding:110px 0 100px}
+.g-glow{position:absolute;top:-30%;right:-10%;width:60vw;height:60vw;max-width:900px;max-height:900px;background:radial-gradient(circle,rgba(27,143,217,.32),transparent 65%);pointer-events:none}
+.g-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.g-eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#a9aed6;margin-bottom:22px}
+.guarantee h2{font-size:clamp(2.2rem,4.6vw,4rem);line-height:1.1;font-weight:500;letter-spacing:-1px;text-transform:uppercase;margin-bottom:38px}
+.c-blue{color:#6fb3ff}.c-orange2{color:#ff6b6b}
+.btn-lg{height:54px;padding:0 32px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;border-radius:10px}
+.g-right p{margin:0;font-size:16px;line-height:1.85;color:#c7cae8}
+.g-right p strong,.g-points strong{color:#fff;font-weight:700}
+.g-points{margin-top:30px}
+.g-points li{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid rgba(255,255,255,.12);font-size:15px;color:#c7cae8}
+.g-points li:last-child{padding-bottom:0}
+.tick{width:26px;height:26px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:grid;place-items:center;flex:none;color:#fff}
+.tick .ico{width:13px;height:13px;stroke-width:2.6}
+
+/* =========================================================
    MOBILE BOTTOM BAR + SHEET (hidden on desktop)
    ========================================================= */
 .bottom-bar,.sheet,.sheet-backdrop{display:none}
@@ -258,6 +276,11 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .what-body p{font-size:16px}
   .what-chips li{font-size:13px;padding:7px 14px 7px 12px}
   .what-media .m-mark{left:20px;bottom:16px}
+
+  .guarantee{padding:72px 0 64px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .g-grid{grid-template-columns:1fr;gap:36px}
+  .guarantee h2{margin-bottom:28px}
+  .g-left .btn-lg{width:100%}
 
   /* sticky bottom bar */
   .bottom-bar{
