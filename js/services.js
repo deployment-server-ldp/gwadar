@@ -23,7 +23,7 @@ window.GWADAR_SERVICES = [
   { title: "Email & CRM", short: "Turn more leads into customers, and customers into repeat buyers.", link: "services/crm-development.html", image: "assets/services/email-crm.webp",
     desc: "Automation, lifecycle email and CRM set-up so no lead goes cold and every customer is worth more.",
     chips: ["Automation", "Lifecycle Email", "HubSpot", "Zoho", "Salesforce"], bg: "linear-gradient(135deg,#2de1d6,#073a46)" },
-  { title: "Content Production", short: "Create channel-ready work with a clear commercial role.", link: "services/creative.html", image: "",
+  { title: "Content Production", short: "Create channel-ready work with a clear commercial role.", link: "services/creative.html", image: "assets/services/content-production.webp",
     desc: "Photography, video, design and copy produced for the channels where your customers actually are.",
     chips: ["Video", "Photography", "Ad Creative", "Copywriting"], bg: "linear-gradient(135deg,#f5a524,#5a3a00)" }
 ];
