@@ -14,7 +14,7 @@ window.GWADAR_SERVICES = [
   { title: "AI Search & GEO", short: "Be found and cited in AI-generated answers.", link: "services/seo-aeo.html", image: "assets/services/ai-search-geo.webp",
     desc: "Get your brand surfaced in ChatGPT, Gemini and Google AI answers through structured content and entity authority.",
     chips: ["AEO", "GEO", "Structured Data", "Brand Mentions"], bg: "linear-gradient(135deg,#8b5cf6,#1a0f4d)" },
-  { title: "Paid Social", short: "Scale the audiences and creative that convert.", link: "services/social-media.html", image: "",
+  { title: "Paid Social", short: "Scale the audiences and creative that convert.", link: "services/social-media.html", image: "assets/services/paid-social.webp",
     desc: "Meta, TikTok and LinkedIn campaigns with creative testing and audience strategy that scales what works.",
     chips: ["Meta Ads", "TikTok Ads", "LinkedIn Ads", "Creative Testing"], bg: "linear-gradient(135deg,#e0457b,#3d0a24)" },
   { title: "Organic Social", short: "Build relevance, trust and an audience that buys.", link: "services/social-media.html", image: "",
