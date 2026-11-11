@@ -11,6 +11,6 @@ window.GWADAR_INDUSTRIES = [
   { title: "Finance & Professional Services", link: "industries/finance.html", image: "assets/industries/finance.webp", icon: "i-coin",      bg: "linear-gradient(160deg,#8b5cf6,#1a0f4d)" },
   { title: "Automotive",                 link: "industries/automotive.html",   image: "assets/industries/automotive.webp", icon: "i-car",       bg: "linear-gradient(160deg,#e0457b,#3d0a24)" },
   { title: "Trade & Construction",       link: "industries/trade.html",        image: "assets/industries/trade.webp", icon: "i-clipboard", bg: "linear-gradient(160deg,#f5a524,#4a2f00)" },
-  { title: "Not-For-Profit",             link: "industries/not-for-profit.html", image: "", icon: "i-gift",    bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
+  { title: "Not-For-Profit",             link: "industries/not-for-profit.html", image: "assets/industries/not-for-profit.webp", icon: "i-gift",    bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
   { title: "More Industries",            link: "industries/index.html",        image: "", icon: "i-arrow-right", bg: "linear-gradient(160deg,#3b5bdb,#0a1245)" }
 ];
