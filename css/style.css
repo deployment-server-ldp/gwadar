@@ -239,6 +239,25 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .tick .ico{width:13px;height:13px;stroke-width:2.6}
 
 /* =========================================================
+   HOW WE WORK (light)
+   ========================================================= */
+.how{position:relative;z-index:3;background:#f3f3f1;color:var(--ink);border-radius:44px 44px 0 0;margin-top:-44px;padding:100px 0 110px}
+.how-eyebrow{display:inline-block;position:relative;padding-top:18px;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.how-eyebrow::before{content:"";position:absolute;top:0;left:0;width:38px;height:3px;background:var(--orange)}
+.how h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:600;letter-spacing:-1.6px;line-height:1.1;margin:18px 0 18px}
+.how-lead{margin:0;max-width:600px;font-size:18px;line-height:1.65;color:#55586f}
+.steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:0 28px;margin-top:64px}
+.step-top{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.egg{width:56px;height:68px;flex:none;display:grid;place-items:center;background:#d9dcfb;color:var(--ink);border-radius:50% 50% 50% 50%/62% 62% 38% 38%}
+.egg .ico{width:28px;height:28px;stroke-width:1.8}
+.is-last .egg{background:var(--orange);color:#fff}
+.dash{position:relative;flex:1;height:0;border-top:2px dashed var(--orange);margin-right:2px}
+.dash::after{content:"";position:absolute;right:-4px;top:-6px;border-left:9px solid var(--orange);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.step-no{display:block;font-size:12px;font-weight:800;color:#d4520a;letter-spacing:.05em}
+.step h3{font-size:20px;font-weight:600;margin:8px 0 10px;letter-spacing:-.2px;line-height:1.2}
+.step p{margin:0;font-size:15px;line-height:1.65;color:#5d6078}
+
+/* =========================================================
    MOBILE BOTTOM BAR + SHEET (hidden on desktop)
    ========================================================= */
 .bottom-bar,.sheet,.sheet-backdrop{display:none}
@@ -281,6 +300,17 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
   .g-grid{grid-template-columns:1fr;gap:36px}
   .guarantee h2{margin-bottom:28px}
   .g-left .btn-lg{width:100%}
+
+  .how{padding:64px 0 72px;border-radius:30px 30px 0 0;margin-top:-30px}
+  .how-lead{font-size:16px}
+  .steps{grid-template-columns:1fr;gap:0;margin-top:40px}
+  .step{position:relative;display:grid;grid-template-columns:56px 1fr;column-gap:18px;padding-bottom:30px}
+  .step-top{grid-row:1/4;margin:0;flex-direction:column;align-items:center;gap:6px}
+  .dash{flex:1;width:0;height:auto;border-top:0;border-left:2px dashed var(--orange);min-height:30px;margin:0}
+  .dash::after{right:auto;top:auto;bottom:-4px;left:-6px;border-top:9px solid var(--orange);border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:0}
+  .step-no,.step h3,.step p{grid-column:2}
+  .step h3{margin:2px 0 6px}
+  .is-last{padding-bottom:0}
 
   /* sticky bottom bar */
   .bottom-bar{
