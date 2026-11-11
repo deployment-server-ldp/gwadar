@@ -136,6 +136,20 @@
     select(0);
   })();
 
+  /* ---------- Partners marquee ---------- */
+  (function () {
+    var data = window.GWADAR_PARTNERS || [], track = document.getElementById('partnersTrack');
+    if (!track || !data.length) return;
+    function e(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+    var tile = data.map(function (p) {
+      var inner = p.logo ? '<img src="' + e(p.logo) + '" alt="' + e(p.name) + (p.sub ? ' ' + e(p.sub) : '') + '" loading="lazy">'
+        : '<span class="p-name">' + e(p.name) + '</span>' + (p.sub ? '<span class="p-sub">' + e(p.sub) + '</span>' : '');
+      return '<div class="p-tile">' + inner + '</div>';
+    }).join('');
+    var half = tile + tile;
+    track.innerHTML = '<div class="p-set">' + half + '</div><div class="p-set" aria-hidden="true">' + half + '</div>';
+  })();
+
   /* ---------- Client carousel (auto-scrolling marquee) ---------- */
   var track = document.getElementById('carouselTrack');
   var viewport = document.getElementById('carouselViewport');
