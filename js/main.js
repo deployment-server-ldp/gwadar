@@ -12,6 +12,27 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---------- Hero rotating word ---------- */
+  (function () {
+    var box = document.getElementById('rotator');
+    if (!box) return;
+    var words = box.querySelectorAll('.rot-word');
+    var still = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var i = 0, timer = null;
+    function next() {
+      var cur = words[i];
+      i = (i + 1) % words.length;
+      var nxt = words[i];
+      cur.classList.remove('is-active'); cur.classList.add('is-leaving');
+      nxt.classList.add('is-active');
+      setTimeout(function () { cur.classList.remove('is-leaving'); }, 700);
+    }
+    function start() { if (!timer && !still.matches) timer = setInterval(next, 2300); }
+    function stop() { clearInterval(timer); timer = null; }
+    document.addEventListener('visibilitychange', function () { document.hidden ? stop() : start(); });
+    start();
+  })();
+
   /* ---------- Desktop mega menu ---------- */
   var navBtns = document.querySelectorAll('.nav-btn[data-panel]');
   var panels = {};

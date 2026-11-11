@@ -162,6 +162,11 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .hero .container{position:relative}
 .hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem);line-height:1.12;font-weight:500;letter-spacing:-1.5px}
 .hero h1 .accent{color:var(--teal)}
+.rotator{display:inline-grid;vertical-align:bottom;overflow:hidden;padding-right:.06em;text-transform:uppercase;letter-spacing:-.5px}
+.rot-word{grid-area:1/1;opacity:0;transform:translateY(105%);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .45s ease}
+.rot-word.is-active{opacity:1;transform:none}
+.rot-word.is-leaving{opacity:0;transform:translateY(-105%)}
+.rot-word.rot-hot{color:var(--orange)}
 
 .rating{display:flex;align-items:center;gap:8px;margin-top:34px;font-size:15px}
 .rating b{font-weight:600;font-size:17px}
@@ -628,6 +633,7 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 }
 
 @media (prefers-reduced-motion:reduce){
+  .rot-word{transition:none!important}
   .partners-viewport{overflow-x:auto}
   .partners-track{animation:none!important}
   *{animation:none!important;transition:none!important}
