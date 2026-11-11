@@ -192,7 +192,8 @@
       var img = d.image ? "background-image:url('" + String(d.image).replace(/'/g, '%27') + "')" : 'background:' + d.bg;
       return '<a class="i-card" href="' + e(d.link) + '"><span class="i-img" style="' + img + '"></span>' +
         (d.image ? '' : '<svg class="i-ico" aria-hidden="true"><use href="#' + e(d.icon) + '"/></svg>') +
-        '<span class="i-title">' + e(d.title) + '</span></a>';
+        '<span class="i-body"><span class="i-title">' + e(d.title) + '</span>' + (d.sub ? '<span class="i-sub">' + e(d.sub) + '</span>' : '') + '</span>' +
+        '<span class="i-go" aria-hidden="true"><svg class="ico"><use href="#i-arrow-up-right"/></svg></span></a>';
     }).join('');
   })();
 
