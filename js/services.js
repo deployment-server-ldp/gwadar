@@ -11,7 +11,7 @@ window.GWADAR_SERVICES = [
   { title: "Google Ads", short: "Turn high-intent searches into profitable demand.", link: "services/ppc-sem.html", image: "assets/services/google-ads.webp",
     desc: "Search, Shopping and Performance Max campaigns built around profit, not clicks, with tracking you can trust.",
     chips: ["Search", "Shopping", "Performance Max", "YouTube", "Remarketing"], bg: "linear-gradient(135deg,#16c04b,#06351a)" },
-  { title: "AI Search & GEO", short: "Be found and cited in AI-generated answers.", link: "services/seo-aeo.html", image: "",
+  { title: "AI Search & GEO", short: "Be found and cited in AI-generated answers.", link: "services/seo-aeo.html", image: "assets/services/ai-search-geo.webp",
     desc: "Get your brand surfaced in ChatGPT, Gemini and Google AI answers through structured content and entity authority.",
     chips: ["AEO", "GEO", "Structured Data", "Brand Mentions"], bg: "linear-gradient(135deg,#8b5cf6,#1a0f4d)" },
   { title: "Paid Social", short: "Scale the audiences and creative that convert.", link: "services/social-media.html", image: "",
