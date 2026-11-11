@@ -117,6 +117,7 @@
       media.style.backgroundImage = d.image ? "url('" + d.image + "')" : d.bg;
       media.innerHTML = d.image ? '' : '<span class="m-mark">' + e(d.title) + '</span>';
       chips.innerHTML = d.chips.map(function (c) { return '<li>' + e(c) + '</li>'; }).join('');
+      chips.hidden = !!d.image;
       title.textContent = d.title; desc.textContent = d.desc;
       link.href = d.link; link.firstChild.nodeValue = 'Explore ' + d.title + ' ';
       card.setAttribute('aria-labelledby', 'wtab' + i);

@@ -207,13 +207,14 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .what-tab[aria-selected="true"] .ico{opacity:1;transform:none}
 
 .what-card{background:#fff;border-radius:30px;overflow:hidden;display:flex;flex-direction:column}
-.what-media{position:relative;aspect-ratio:16/10.5;background-size:cover;background-position:center;overflow:hidden}
+.what-media{position:relative;aspect-ratio:4/3;background-size:cover;background-position:center;overflow:hidden}
 .what-media::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.22),transparent 45%)}
 .what-media .m-mark{position:absolute;left:32px;bottom:26px;font-family:var(--font-head);font-size:clamp(2rem,4vw,3.4rem);font-weight:600;color:rgba(255,255,255,.92);z-index:1}
 .what-body{padding:34px 44px 44px}
 .what-chips{display:flex;flex-wrap:wrap;gap:10px}
 .what-chips li{display:inline-flex;align-items:center;gap:9px;background:#efeff3;border-radius:999px;padding:9px 20px 9px 18px;font-size:15px;font-weight:600}
 .what-chips li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+.what-chips[hidden]+h3{margin-top:0!important}
 .what-body h3{font-size:34px;font-weight:600;margin:22px 0 10px;letter-spacing:-.5px}
 .what-body p{margin:0;font-size:18px;color:#4a4d6a;line-height:1.65}
 .what-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-weight:700;font-size:17px;color:#0f74b8}

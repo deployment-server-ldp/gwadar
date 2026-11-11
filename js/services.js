@@ -1,9 +1,11 @@
 /* =========================================================
    "What we do" section data - edit text, links and images here.
-   image : optional path (e.g. "assets/services/seo.jpg"); gradient shows if empty
+   image : optional path (e.g. "assets/services/seo.webp", 4:3 ratio works best).
+           If the image already has the chips drawn on it, the text chips are hidden automatically.
+           Gradient shows if empty
    ========================================================= */
 window.GWADAR_SERVICES = [
-  { title: "SEO", short: "Earn visibility where buyers are searching.", link: "services/seo-aeo.html", image: "",
+  { title: "SEO", short: "Earn visibility where buyers are searching.", link: "services/seo-aeo.html", image: "assets/services/seo.webp",
     desc: "Rank for the searches that drive revenue. Technical foundations, content that answers real questions, and the authority to be believed.",
     chips: ["Technical SEO", "Content", "Digital PR", "Local SEO", "Ecommerce SEO"], bg: "linear-gradient(135deg,#1b8fd9,#0b1654)" },
   { title: "Google Ads", short: "Turn high-intent searches into profitable demand.", link: "services/ppc-sem.html", image: "",
