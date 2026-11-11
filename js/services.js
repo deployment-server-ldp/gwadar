@@ -20,7 +20,7 @@ window.GWADAR_SERVICES = [
   { title: "Organic Social", short: "Build relevance, trust and an audience that buys.", link: "services/social-media.html", image: "assets/services/organic-social.webp",
     desc: "Consistent, on-brand content and community management that turns followers into customers.",
     chips: ["Community Growth", "Engagement", "Brand Awareness", "Content Strategy"], bg: "linear-gradient(135deg,#ff6a13,#5a1d00)" },
-  { title: "Email & CRM", short: "Turn more leads into customers, and customers into repeat buyers.", link: "services/crm-development.html", image: "",
+  { title: "Email & CRM", short: "Turn more leads into customers, and customers into repeat buyers.", link: "services/crm-development.html", image: "assets/services/email-crm.webp",
     desc: "Automation, lifecycle email and CRM set-up so no lead goes cold and every customer is worth more.",
     chips: ["Automation", "Lifecycle Email", "HubSpot", "Zoho", "Salesforce"], bg: "linear-gradient(135deg,#2de1d6,#073a46)" },
   { title: "Content Production", short: "Create channel-ready work with a clear commercial role.", link: "services/creative.html", image: "",
