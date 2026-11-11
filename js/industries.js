@@ -6,7 +6,7 @@
    ========================================================= */
 window.GWADAR_INDUSTRIES = [
   { title: "Healthcare & Clinics",       link: "industries/healthcare.html",   image: "assets/industries/healthcare.webp", icon: "i-heart",     bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
-  { title: "Property & Real Estate",     link: "industries/property.html",     image: "", icon: "i-house",     bg: "linear-gradient(160deg,#16a085,#06281f)" },
+  { title: "Property & Real Estate",     link: "industries/property.html",     image: "assets/industries/property.webp", icon: "i-house",     bg: "linear-gradient(160deg,#16a085,#06281f)" },
   { title: "Hospitality & Tourism",      link: "industries/hospitality.html",  image: "", icon: "i-dining",    bg: "linear-gradient(160deg,#ff6a13,#4a1700)" },
   { title: "Finance & Professional Services", link: "industries/finance.html", image: "", icon: "i-coin",      bg: "linear-gradient(160deg,#8b5cf6,#1a0f4d)" },
   { title: "Automotive",                 link: "industries/automotive.html",   image: "", icon: "i-car",       bg: "linear-gradient(160deg,#e0457b,#3d0a24)" },
