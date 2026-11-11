@@ -136,6 +136,19 @@
     select(0);
   })();
 
+  /* ---------- Team grid ---------- */
+  (function () {
+    var data = window.GWADAR_TEAM || [], grid = document.getElementById('teamGrid');
+    if (!grid || !data.length) return;
+    function e(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+    var sil = '<svg class="t-sil" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="17"/><path d="M14 100c0-22 14-34 36-34s36 12 36 34z"/></svg>';
+    grid.innerHTML = data.map(function (m) {
+      return '<article class="t-card"><div class="t-photo' + (m.photo ? ' has-photo' : '') + '">' +
+        (m.photo ? '<img src="' + e(m.photo) + '" alt="' + e(m.name) + '" loading="lazy">' : sil) +
+        '</div><h3>' + e(m.name) + '</h3><p>' + e(m.role) + '</p></article>';
+    }).join('');
+  })();
+
   /* ---------- Partners marquee ---------- */
   (function () {
     var data = window.GWADAR_PARTNERS || [], track = document.getElementById('partnersTrack');
