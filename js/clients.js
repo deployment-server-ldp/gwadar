@@ -1,5 +1,6 @@
 /* =========================================================
    Client carousel data  -  edit / add your real clients here.
+   Order matters: keep "people" and "place" cards alternating (type is just a note for you).
    Fields (all optional except name):
      name   : client name (shown if no logo image)
      logo   : path to a logo image, e.g. "assets/clients/acme-logo.png"
@@ -11,15 +12,15 @@
      bg     : fallback CSS background if no image
    ========================================================= */
 window.GWADAR_CLIENTS = [
-  { name: "Bio-X Weight Loss Center", stat: "+471%", label: "Increase in Organic Leads", image: "assets/clients/bio-x-weight-loss.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
-  { name: "Junk Patrol", stat: "+179%", label: "Organic Traffic Value", image: "assets/clients/junk-patrol.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8b5cf6,#1a0f4d)" },
-  { name: "Victor Super Premium Pet Food", stat: "134%",  label: "Increase in engagement rate", image: "assets/clients/victor.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#5a1d00)" },
-  { name: "Joaquin Painting", stat: "290%",  label: "Increase in conversions", image: "assets/clients/joaquin-painting.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#16c04b,#06351a)" },
-  { name: "Tyris Tile and Renovations", stat: "172%",  label: "Increase in organic website traffic", image: "assets/clients/tyris-tile-renovations.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
-  { name: "Sharkey's Cuts for Kids", stat: "4.8x",  label: "Return on ad spend", image: "assets/clients/sharkeys-cuts-for-kids.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#e0457b,#3d0a24)" },
-  { name: "Bali Family Dental Care", stat: "+811%", label: "Social Media Growth", image: "assets/clients/bali-family-dental-care.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
-  { name: "Aruni Restoran & Bar", stat: "5.11x", label: "ROAS on Meta Ads", image: "assets/clients/aruni-restoran-bar.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8a4b2a,#2a1408)" },
-  { name: "Rüyam Gemüse Kebab", stat: "+178%", label: "Conversions YOY", image: "assets/clients/ruyam-gemuse-kebab.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#3a1a00)" },
-  { name: "Alamo", stat: "190+", label: "Online Bookings Monthly", image: "assets/clients/alamo.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
-  { name: "Silver Hammer", stat: "40+", label: "Listings Monthly Sold", image: "assets/clients/silver-hammer.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" }
+  { type: "people", name: "Bio-X Weight Loss Center", stat: "+471%", label: "Increase in Organic Leads", image: "assets/clients/bio-x-weight-loss.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
+  { type: "people", name: "Victor Super Premium Pet Food", stat: "134%",  label: "Increase in engagement rate", image: "assets/clients/victor.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#5a1d00)" },
+  { type: "place", name: "Joaquin Painting", stat: "290%",  label: "Increase in conversions", image: "assets/clients/joaquin-painting.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#16c04b,#06351a)" },
+  { type: "people", name: "Junk Patrol", stat: "+179%", label: "Organic Traffic Value", image: "assets/clients/junk-patrol.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8b5cf6,#1a0f4d)" },
+  { type: "people", name: "Sharkey's Cuts for Kids", stat: "4.8x",  label: "Return on ad spend", image: "assets/clients/sharkeys-cuts-for-kids.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#e0457b,#3d0a24)" },
+  { type: "place", name: "Tyris Tile and Renovations", stat: "172%",  label: "Increase in organic website traffic", image: "assets/clients/tyris-tile-renovations.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#2de1d6,#073a46)" },
+  { type: "people", name: "Rüyam Gemüse Kebab", stat: "+178%", label: "Conversions YOY", image: "assets/clients/ruyam-gemuse-kebab.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#3a1a00)" },
+  { type: "people", name: "Aruni Restoran & Bar", stat: "5.11x", label: "ROAS on Meta Ads", image: "assets/clients/aruni-restoran-bar.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8a4b2a,#2a1408)" },
+  { type: "place", name: "Alamo", stat: "190+", label: "Online Bookings Monthly", image: "assets/clients/alamo.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
+  { type: "people", name: "Bali Family Dental Care", stat: "+811%", label: "Social Media Growth", image: "assets/clients/bali-family-dental-care.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
+  { type: "place", name: "Silver Hammer", stat: "40+", label: "Listings Monthly Sold", image: "assets/clients/silver-hammer.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" }
 ];

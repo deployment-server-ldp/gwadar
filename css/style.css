@@ -189,10 +189,10 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .c-stat{font-family:var(--font-head);font-size:32px;font-weight:500;line-height:1.1}
 .c-label{font-size:14px;color:#e6e8ff;margin-top:2px}
 
-.carousel-controls{display:flex;justify-content:flex-end;gap:12px;margin-top:20px}
-.arrow{width:38px;height:38px;border-radius:50%;background:var(--green);color:#041a0b;display:grid;place-items:center;transition:transform .15s,filter .15s}
+.carousel-controls{display:flex;justify-content:center;gap:14px;margin-top:26px}
+.arrow{width:46px;height:46px;border-radius:50%;background:var(--green);color:#041a0b;display:grid;place-items:center;transition:transform .15s,filter .15s}
 .arrow:hover{transform:scale(1.08);filter:brightness(1.1)}
-.arrow .ico{width:18px;height:18px;stroke-width:2.2}
+.arrow .ico{width:20px;height:20px;stroke-width:2.2}
 
 /* =========================================================
    WHAT WE DO (light section)
