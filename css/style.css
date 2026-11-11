@@ -177,6 +177,8 @@ h1,h2,h3{font-family:var(--font-head);margin:0;font-weight:500}
 .c-card::before{content:"";position:absolute;inset:0;z-index:-2;background:var(--bg,linear-gradient(160deg,#1b8fd9,#0b1654));background-size:cover;background-position:center}
 .c-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,10,46,.35) 0%,rgba(7,10,46,.05) 40%,rgba(7,10,46,.82) 100%)}
 .c-card.has-img::before{background-image:var(--img)}
+.c-card.is-bare::after{background:linear-gradient(180deg,rgba(7,10,46,0) 55%,rgba(7,10,46,.88) 100%)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .c-logo{max-height:46px;max-width:78%;object-fit:contain}
 .c-name{font-family:var(--font-head);font-size:22px;font-weight:600;letter-spacing:-.3px}
 .c-stat{font-family:var(--font-head);font-size:32px;font-weight:500;line-height:1.1}

@@ -235,14 +235,14 @@
   function cardHTML(c) {
     var style = [];
     if (c.bg) style.push('--bg:' + c.bg);
-    if (c.image) style.push("--img:url('" + String(c.image).replace(/'/g, '%27') + "')");
-    var top = c.logo
+    if (c.image) style.push("--img:url('" + new URL(c.image, document.baseURI).href.replace(/'/g, '%27') + "')");
+    var top = c.bare ? '<span class="c-name" aria-hidden="true"></span><span class="sr-only">' + esc(c.name) + '</span>' : c.logo
       ? '<img class="c-logo" src="' + esc(c.logo) + '" alt="' + esc(c.name) + '" loading="lazy">'
       : '<span class="c-name">' + esc(c.name) + '</span>';
     var bottom = (c.stat || c.label)
       ? '<div><div class="c-stat">' + esc(c.stat) + '</div><div class="c-label">' + esc(c.label) + '</div></div>'
       : '<div></div>';
-    return '<article class="c-card' + (c.image ? ' has-img' : '') + '" style="' + style.join(';') + '">' + top + bottom + '</article>';
+    return '<article class="c-card' + (c.image ? ' has-img' : '') + (c.bare ? ' is-bare' : '') + '" style="' + style.join(';') + '">' + top + bottom + '</article>';
   }
 
   var setHTML = clients.map(cardHTML).join('');
