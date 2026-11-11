@@ -136,6 +136,8 @@
     select(0);
   })();
 
+  var yr = document.getElementById('year'); if (yr) yr.textContent = new Date().getFullYear();
+
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-q').forEach(function (btn) {
     btn.addEventListener('click', function () {
