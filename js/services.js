@@ -8,7 +8,7 @@ window.GWADAR_SERVICES = [
   { title: "SEO", short: "Earn visibility where buyers are searching.", link: "services/seo-aeo.html", image: "assets/services/seo.webp",
     desc: "Rank for the searches that drive revenue. Technical foundations, content that answers real questions, and the authority to be believed.",
     chips: ["Technical SEO", "Content", "Digital PR", "Local SEO", "Ecommerce SEO"], bg: "linear-gradient(135deg,#1b8fd9,#0b1654)" },
-  { title: "Google Ads", short: "Turn high-intent searches into profitable demand.", link: "services/ppc-sem.html", image: "",
+  { title: "Google Ads", short: "Turn high-intent searches into profitable demand.", link: "services/ppc-sem.html", image: "assets/services/google-ads.webp",
     desc: "Search, Shopping and Performance Max campaigns built around profit, not clicks, with tracking you can trust.",
     chips: ["Search", "Shopping", "Performance Max", "YouTube", "Remarketing"], bg: "linear-gradient(135deg,#16c04b,#06351a)" },
   { title: "AI Search & GEO", short: "Be found and cited in AI-generated answers.", link: "services/seo-aeo.html", image: "",
