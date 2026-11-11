@@ -20,5 +20,6 @@ window.GWADAR_CLIENTS = [
   { name: "Bali Family Dental Care", stat: "+811%", label: "Social Media Growth", image: "assets/clients/bali-family-dental-care.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
   { name: "Aruni Restoran & Bar", stat: "5.11x", label: "ROAS on Meta Ads", image: "assets/clients/aruni-restoran-bar.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#8a4b2a,#2a1408)" },
   { name: "Rüyam Gemüse Kebab", stat: "+178%", label: "Conversions YOY", image: "assets/clients/ruyam-gemuse-kebab.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#ff6a13,#3a1a00)" },
-  { name: "Alamo", stat: "190+", label: "Online Bookings Monthly", image: "assets/clients/alamo.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" }
+  { name: "Alamo", stat: "190+", label: "Online Bookings Monthly", image: "assets/clients/alamo.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" },
+  { name: "Silver Hammer", stat: "40+", label: "Listings Monthly Sold", image: "assets/clients/silver-hammer.webp", logo: "", bare: true, bg: "linear-gradient(160deg,#1b8fd9,#0b1654)" }
 ];
