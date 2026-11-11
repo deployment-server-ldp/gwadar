@@ -136,6 +136,19 @@
     select(0);
   })();
 
+  /* ---------- Industries grid ---------- */
+  (function () {
+    var data = window.GWADAR_INDUSTRIES || [], grid = document.getElementById('indsGrid');
+    if (!grid || !data.length) return;
+    function e(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+    grid.innerHTML = data.map(function (d) {
+      var img = d.image ? "background-image:url('" + String(d.image).replace(/'/g, '%27') + "')" : 'background:' + d.bg;
+      return '<a class="i-card" href="' + e(d.link) + '"><span class="i-img" style="' + img + '"></span>' +
+        (d.image ? '' : '<svg class="i-ico" aria-hidden="true"><use href="#' + e(d.icon) + '"/></svg>') +
+        '<span class="i-title">' + e(d.title) + '</span></a>';
+    }).join('');
+  })();
+
   /* ---------- Team grid ---------- */
   (function () {
     var data = window.GWADAR_TEAM || [], grid = document.getElementById('teamGrid');
